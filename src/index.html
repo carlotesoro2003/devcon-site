@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/tesorostyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+.navbar-brand{
+color: var(--light-text-color, #FFF);
+/* h3 */
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 133.333% */
+letter-spacing: 0.1px;
+}
+
+.nav-item{
+    color: #FFF;
+}
+
+h1{
+  color: var(--light-text-color, #FFF);
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px; /* 137.931% */
+  letter-spacing: 0.2px;
+}
+
+h4{
+color: var(--light-text-color, #FFF);
+/* h4 */
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 150% */
+letter-spacing: 0.2px;
+}
+
+.card-title{
+color: var(--text-color, #252B42);
+text-align: center;
+/* h3 */
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 133.333% */
+letter-spacing: 0.1px;
+}
+
+.form-control{
+  border-radius: 5px;
+border: 1px solid var(--muted-color, #BDBDBD);
+background: #F9F9F9;
+}
+
+.form-select{
+  border-radius: 5px;
+  border: 1px solid var(--muted-color, #BDBDBD);
+}
+
+::placeholder{
+  color: var(--second-text-color, #737373);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 200% */
+letter-spacing: 0.2px;
+}
+
+
+
+.form-select option{
+  color: var(--second-text-color, #737373);
+
+/* h6 */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; /* 171.429% */
+letter-spacing: 0.2px;
+}
+
+.form-group label{
+  color: var(--text-color, #252B42);
+
+  /* h6 */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.2px;
+}
+
+
+.btn-learn{
+  color: var(--light-text-color, #FFF);
+  text-align: center;
+  /* btn-text */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h2{
+  color: var(--light-text-color, #FFF);
+  /* h2 */
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px; /* 142.5% */
+  letter-spacing: 0.2px;
+}
+
+.main-content p{
+  color: var(--light-text-color, #FFF);
+  text-align: center;
+  /* paragraph */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+.card-item h5{
+  color: var(--text-color, #252B42);
+  /* h5 */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.1px;
+}
+
+
+
+.card-link a{
+  color: var(--secondary-color-1, #0D5C63);
+
+  /* link */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
+.who-row p{
+  color: var(--light-text-color, #FFF);
+  text-align: center;
+  /* paragraph */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+.who-row h2{
+  text-align: center;
+}
+
+.test-person a{
+  color: var(--primary-color, #FF7B47);
+
+  /* link */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.2px;
+  text-decoration: none ;
+}
+
+h6{
+  color: var(--text-color, #252B42);
+
+/* h6 */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+}
+
+h5{
+  color: var(--text-color, #252B42);
+text-align: center;
+
+/* h5 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+}
+
+
+
+
+.features-body{
+  color: var(--second-text-color, #737373);
+
+/* h6 */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+}
+
+ul {
+  margin: 0;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -1px;
+}
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
+}
+
+
+
+.team h6{
+  color: var(--second-text-color, #737373);
+  text-align: center;
+
+/* h6 */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+}
+
+
+
+.card-body p{
+  color: var(--second-text-color, #737373);
+
+/* h6 */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+}
+
+.contact-text h2{
+  color: var(--light-text-color, #FFF);
+text-align: left;
+
+/* h2 */
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 57px; /* 142.5% */
+letter-spacing: 0.2px;
+}
+
+.contact-text h5{
+  color: var(--light-text-color, #FFF);
+text-align: left;
+
+/* h5 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+}
+
+.footer h5{
+  color: var(--light-text-color, #FFF);
+
+/* h5 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+}
+
+.col-md-2 a{
+  color: var(--muted-color, #BDBDBD);
+
+/* link */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; /* 171.429% */
+letter-spacing: 0.2px;
+text-decoration: none;
+}
+
+.col-md-2 h5{
+  text-align: left;
+}
+
+.footer .col-md-4 h5{
+  text-align: left;
+}
+
+.footer .col-md-4 h6{
+  color: var(--muted-color, #BDBDBD);
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 233.333% */
+letter-spacing: 0.2px;
+}
+
+.footer .col-md-7 h6{
+  color: var(--light-text-color, #FFF);
+
+/* h6 */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+}
+
+.end h6{
+  color: var(--light-text-color, #FFF);
+
+/* h6 */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 45%;
+}
+
+
+
+.video-button{
+  position: absolute;
+  text-align: center;
+}
+
+video{
+  display: block;
+}
+
+
+@media only screen and (max-width:1200px){
+
+  .header h1{
+    text-align: center;
+
+    /* h2 */
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px; /* 142.5% */
+    letter-spacing: 0.2px;
+  }
+
+  .header-btn-2{
+    display: none;
+  }
+
+  .contact h2{
+    font-size: 30px;
+  }
+
+  .nav-link{
+    color: var(--light-text-color, #FFF);
+    text-align: center;
+
+    /* mobile-menu */
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px; /* 150% */
+    letter-spacing: 0.2px;
+  }
+
+ 
+  
+  .header nav{
+    background: var(--dark-background-color, #252B42);
+  }
+
+ .img-wrapper {
+  position: relative;
+}
+
+.img-responsive {
+  height: 442px;
+  object-fit: cover;
+    /* optionally, you can try adjusting the alignment of the image with obejct-position */
+    object-position: 50% 50%;
+
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 35%;
+}
+
+
+}
+
+@media only screen and (min-width:1200px){
+  .toggler-icon::after {
+				position: absolute;
+				content: url(img/navbar-toggler-icon.svg);
+				top: 1.625rem;
+				right: 3.125rem;
+				cursor: pointer;
+			}
+}
+
+
+</style>
+
+<body>
+  <section class="header">
+    <div class="bg-img" style=" background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.40) 1.92% 189.57%),url(img/bg.png); min-height: 100vh; background-repeat: no-repeat; background-position: center;background-size: cover;"> 
+      <nav class="navbar navbar-expand-xl navbar-dark toggler-icon">
+        <div class="container pt-2">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Publist</a>
+          </div>
+
+          <div class="header-btn d-xl-none">
+
+            <button type="button" style="background: transparent; border: none;"><img src="img/icn search .icn-xs.svg"></button>
+            <button type="button" style="background: transparent; border: none;"><img src="img/icn shopping-cart .icn-xs.svg"></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+              <span><img src="img/navbar-toggler-icon.svg" "></span>
+            </button>
+      
+          </div>
+
+          <div class="collapse navbar-collapse " id="navbarToggle">
+            <ul class="navbar-nav  ms-auto">
+              <li class="nav-item ">
+                <a class="nav-link mx-2" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="header-btn-2">
+              <button type="button" style="background: transparent; border: none;"><img src="img/icn search .icn-xs.svg"></button>
+              <button type="button" style="background: transparent; border: none;"><img src="img/icn shopping-cart .icn-xs.svg"></button>
+            </div>
+          </div>
+          
+        </div>
+      </nav>
+      
+  
+      <div class="container py-5">
+        <div class="row">
+          <div class="col pt-5 text-xl-start text-center m-xl-0 m-4">
+            <h1 class="mb-4">Finance and Consultancy Solution</h1>
+            <h4 class="mb-4">We know how large objects will act, but things on a small scale.</h4>
+            <div class="row">
+              <div class="col-lg-3 mb-lg-0 mb-3">
+                <button type="button" class="btn btn-secondary rounded-5" style="font-size: 0.88rem; background: var(--primary-color, #FF7B47); font-weight: 700; border: none;">Get Quote Now</button>
+              </div>
+              <div class="col-lg-3 mb-lg-0 mb-3">
+                <button class="btn  rounded-5 btn-learn"style="border: 1px solid var(--light-background-color, #FFF);">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card w-sm-100 mx-xl-0 mx-auto   ms-xl-auto mh-auto mb-5 " style=" width: 18rem; height: auto;">
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold mb-4">Book Appointment</h5>
+
+                <form class="form-group">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name*</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email*</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Department*</label>
+                    <select class="form-select">
+                      <option hidden>Please Select</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      </select>
+                    </div>
+                    <div>
+                    <label for="exampleFormControlTextarea1" class="form-label">Time*</label>
+                    <select class="form-select">
+                      <option hidden>Please Select</option>
+                      <option>a</option>
+                      <option>b</option>
+                      <option>c</option>
+                      </select>
+                    </div>
+    
+                    <div class="text-center mt-5 ">
+                      <button type="button" class="btn btn-primary  px-5 py-3" style="background: var(--primary-color, #FF7B47); border: none;">Book Appointment</button>
+                    </div>
+                </form>
+              </div>
+              </div>
+          </div>
+        </div>
+  
+        </div>
+      </div>
+    </div>
+   
+  </section>  
+
+  <section class="features" style="background: var(--dark-background-color, #252B42);">
+    <div class="container px-xl-0 p-5">
+      <div class="main-content text-center mt-5 ">
+        <h2>Every Client Matters</h2>
+        <p class="mb-5">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+      </div>
+
+      <div class="row mt-5">
+				<div class="col-xl-4 pb-5">
+				  <div class="card">
+					<div class="card-header" style="background-color: #D9EDFF;">
+						<div class="d-flex flex-row align-items-center">
+							<div class="m-1 m-lg-4">
+                <img  src="img/icn-circle circle-md primary-color.png " alt="">
+              </div>
+							<div class="m-1 m-lg-4">
+                <h5>Environmental</h5>
+              </div>
+						</div>
+					</div>
+
+          <!--dashed list is now styled in internal css-->
+					<div class="card-body features-body">
+					  <ul class="list-unstyled p-3 dashed">
+						<li class="mb-2"> The best products start 
+							with Figma</li>
+						<li class="mb-2"> Design with real data</li>
+						<li class="mb-2"> Lightning fast prototyping</li>
+						<li class="mb-2"> Fastest way to organize</li>
+						<li class="mb-2"> Work at the speed of thought.</li>
+            <div class="card-link">
+              <a href="" >Learn More</a>
+            </div>
+					  </ul>
+					</div>
+
+				  </div>
+				</div>
+        
+				<div class="col-xl-4 pb-5">
+				  <div class="card">
+					<div class="card-header" style="background-color: #D9EDFF;">
+						<div class="d-flex flex-row align-items-center">
+							<div class="m-1 m-lg-4">
+                <img  src="img/save.png" alt="">
+              </div>
+							<div class="m-1 m-lg-4">
+                <h5>Save Money and Time</h5>
+              </div>
+						</div>
+					</div>
+
+					<div class="card-body features-body">
+					  <ul class="list-unstyled p-3 dashed">
+						<li class="mb-2"> The best products start 
+							with Figma</li>
+						<li class="mb-2"> Design with real data</li>
+						<li class="mb-2"> Lightning fast prototyping</li>
+						<li class="mb-2"> Fastest way to organize</li>
+						<li class="mb-2"> Work at the speed of thought.</li>
+            <div class="card-link">
+              <a href="" >Learn More</a>
+            </div>
+					  </ul>
+					</div>
+
+				  </div>
+				</div>
+				  <div class="col-xl-4 pb-5">
+					<div class="card mb-5">
+					  <div class="card-header" style="background-color: #D9EDFF;">
+						<div class="d-flex flex-row align-items-center">
+							<div class="m-1 m-lg-4"><img  src="img/travel.png" alt=""></div>
+							<div class="m-1 m-lg-2"><h5 class="h6 fw-bold">Travel &amp; Aviation</h5></div>
+						</div>
+						</div>
+					  <div class="card-body features-body">
+						<ul class="list-unstyled p-3 dashed">
+							<li class="mb-2"> The best products start 
+								with Figma</li>
+							<li class="mb-2"> Design with real data</li>
+							<li class="mb-2"> Lightning fast prototyping</li>
+							<li class="mb-2"> Fastest way to organize</li>
+							<li class="mb-2"> Work at the speed of thought.</li>
+              <div class="card-link">
+                <a href="">Learn More</a>
+              </div>
+						  </ul>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+    </div>
+
+  </section>
+  
+  <section class="who" style="  background-image: linear-gradient(to bottom, #252B42 60%, #17213C 40%);">
+    <div class="container container p-5  gap-5">
+      
+      <div class="row who-row">
+        <h2>Who We Are</h2>
+        <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+      </div>
+
+
+
+-     <div class="text-center py-5">
+        <div class="img-wrapper">
+          <div class="gradient">
+            <div class="img-overlay">
+              <button class="btn primary-color btn-md" style="border-radius: 73.6px;padding: 34.8px 36.8px;align-items: center; background: var(--secondary-color-1, #0D5C63);"><img src="img/icn play .icn-sm.svg"></button>
+            </div>
+            <!--image in video tag-->
+            <video width="100%" height="100%" poster="img/img1.jpg" class="text-center pt-5" controls>
+          </div>          
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="testimonials" style="background: var(--dark-background-color, #252B42);">
+    <div class="container p-5  gap-5">
+      <div class="row who-row pt-5 text-center">
+        <h2>What Clients Say</h2>
+        <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+      </div>
+
+      <div class="row mt-5">
+
+        <div class="col-xl-4 pb-3">
+          <div class="card p-4">
+            <div class="stars d-flex  flex-start p-3">
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bx-star.svg"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-text w-75">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+              <div class="d-flex flex-row gap-5">
+
+                <div class="media circle-box xs-circle">
+                  <img src="img/Ellipse 2.svg" class="rounded-circle"> 
+                </div>
+
+                <div class="test-person">
+                  <a href="">Regina Miles</a>
+                  <h6>Designer</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 pb-3">
+          <div class="card p-4" >
+            <div class="stars d-flex  flex-start p-3">
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bx-star.svg"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-text w-75">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+              <div class="d-flex flex-row gap-5">
+
+                <div class="media circle-box xs-circle">
+                  <img src="img/Ellipse 2(2).svg" class="rounded-circle"> 
+                </div>
+
+                <div class="d-flex flex-start flex-column test-person">
+                  <a href="">Regina Miles</a>
+                  <h6>Designer</h6>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 pb-3">
+          <div class="card p-4" >
+            <div class="stars d-flex  flex-start p-3">
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bxs-star.svg"></i>
+              <i><img src="img/icn bx-star.svg"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-text w-75">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+              <div class="d-flex flex-row gap-5">
+
+                <div class="media circle-box xs-circle">
+                  <img src="img/Ellipse 2 (1).svg" class="rounded-circle"> 
+                </div>
+
+                <div class="d-flex flex-start flex-column test-person">
+                  <a href="">Regina Miles</a>
+                  <h6>Designer</h6>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section class="team" style="background: var(--dark-background-color, #252B42);">
+    <div class="container p-5  gap-5">
+      <div class="row who-row pt-5 text-center">
+        <h2>Meet Our Team</h2>
+        <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+      </div>
+
+      <!--Social media icons are now anchor tags-->
+      <div class="row py-5">
+        <div class="col-xl-4 pb-3">
+          <div class="card w-auto">
+            <img class="card-img-top" src="img/img2.png" alt="Card image cap">
+            <div class="card-body  text-center gap-1">
+              <h5 class="card-text pt-3">Avie Beaton</h5>
+              <h6 class="card-text">Co Founder</h6>
+              <div class="text-center pb-3">
+                <a href=""><img src="img/fb.svg"></a>
+                <a href=""><img src="img/ig.svg"></a>
+                <a href=""><img src="img/twitter.svg"></a>
+              </div>
+            </div>
+           
+          </div>
+      
+        </div>
+      
+        <div class="col-xl-4 pb-3">
+          <div class="card w-auto">
+            <img class="card-img-top" src="img/img3.png" alt="Card image cap">
+            <div class="card-body  text-center gap-1">
+              <h5 class="card-text pt-3">Ben Jonson</h5>
+              <h6 class="card-text">Consultant</h6>
+              <div class="text-center pb-3">
+                <a href=""><img src="img/fb.svg"></a>
+                <a href=""><img src="img/ig.svg"></a>
+                <a href=""><img src="img/twitter.svg"></a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      
+        <div class="col-xl-4 pb-3">
+          <div class="card w-auto">
+            <img class="card-img-top" src="img/img4.png" alt="Card image cap">
+            <div class="card-body  text-center gap-1">
+              <h5 class="card-text pt-3">Ashley Fletcher</h5>
+              <h6 class="card-text">Manager</h6>
+              <div class="text-center pb-3">
+                <a href=""><img src="img/fb.svg"></a>
+                <a href=""><img src="img/ig.svg"></a>
+                <a href=""><img src="img/twitter.svg"></a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section> 
+
+
+  <section class="contact">
+    <div class="bg-img" style=" background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.40) 1.92% 189.57%),url(img/img5.png); min-height: 100vh; background-repeat: no-repeat; background-position: center;background-size: cover;">
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="card " style="background: transparent; border: none;">
+              <div class="card-body  pt-3">
+                <div class="contact-text">
+                  <h5>Contact Us</h5>
+                  <h2>Make an Appointment</h2>
+                </div>
+                
+                <form>
+                  <div class="form-group pt-5">
+                    <div class="row row-cols-1 row-cols-xl-2">
+                      <div class="col  mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
+                        </div>
+                        <div class="col mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+                        </div>
+    
+                        <div class="col mb-3">
+                          <select class="form-select">
+                            <option hidden>Please Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select> 
+                        </div>
+    
+                        <div class="col">
+                          <select class="form-select">
+                           <option hidden class="hidden">4:00 avaialble</option>
+                           <option>a</option>
+                           <option>b</option>
+                           <option>c</option>
+                          </select>
+                        </div>
+    
+                        <div class="form-group col-xl-12 pt-5 pb-5" style="border-radius: 5px;">
+                          <textarea class="form-control p-5" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                  </div>
+                  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    
+    </div>
+  </section>  
+
+
+  <section class="white">
+    <div style="background: #FAFAFA;">
+      <div class="container  px-5 pt-5 pb-3">
+        <div class="row">
+          <div class="col-xl-6">
+            <h3>Consulting Agency For Your Business</h3>
+            <p>the quick fox jumps over the lazy dog</p>
+          </div>
+
+          <div class="col-xl-2 ms-auto">
+            <button type="button" class="btn btn-primary  px-5 py-3" style="background: var(--primary-color, #FF7B47); border: none;">Contact Us</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer" style="background: var(--text-color, #252B42);">
+    <div class="container  px-5 pt-5 pb-3">
+      <div class="row nav-row" >
+
+        <div class="col-xl-6 ">
+          <a class="navbar-brand" href="#" >Publist</a>
+        </div>
+
+        
+        <!--Social media icons are now anchor tags-->
+        <div class="col-xl-2 ms-auto">
+          <a href=""><img src="img/ant-design_facebook-filled.svg" class="mx-2"></a>
+          <a href=""><img src="img/ant-design_instagram-outlined.svg" class="mx-2"></a>
+          <a href=""><img src="img/ant-design_twitter-outlined.svg" class="mx-2"></a>
+          <a href=""><img src="img/carbon_logo-youtube.svg" class="mx-2"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-5 px-5 w-auto">
+      <hr style=" height: 1px; color: white;">
+    </div>
+
+    
+
+    <div class="container d-flex w-auto h-100 flex-column flex-start px-5 pb-5 pt-3">
+      <div class="row pt-5">
+
+        <div class="col-md-2 pt-4">
+          <h5>Company Info</h5>
+          <div class="d-flex flex-column flex-start gap-2">
+            <a href="">About Us</a>
+            <a href="">Carrier</a>
+            <a href="">We are Hiring</a>
+            <a href="">Blog</a>
+          </div>
+        </div>
+
+        <div class="col-md-2 pt-4">
+          <div class="d-flex flex-column flex-start gap-2">
+            <h5>Legal</h5>
+            <a href="">About Us</a>
+            <a href="">Carrier</a>
+            <a href="">We are Hiring</a>
+            <a href="">Blog</a>
+          </div>
+        </div>
+
+        <div class="col-md-2 pt-4">
+          <h5>Features</h5>
+          <div class="d-flex flex-column flex-start gap-2">
+            <a href="">Business Marketing</a>
+            <a href="">User Analytic</a>
+            <a href="">Live Chat</a>
+            <a href="">Unlimited Support</a>
+          </div>
+        </div>
+
+        <div class="col-md-2 pt-4">
+          <h5>Resources</h5>
+          <div class="d-flex flex-column flex-start gap-2">
+            <a href="">IOS & Android</a>
+            <a href="">Watch a Demo</a>
+            <a href="">Customers</a>
+            <a href="">API</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 pt-4">
+          <h5>Get in Touch</h5>
+          <div class="input-group mb-3 col-md-10">
+            <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button type="button" class="btn btn-primary py-3" style="background: var(--primary-color, #FF7B47); border-radius: 0px; border: none;">Subscribe</button>
+            </div>
+          </div>
+          <h6>Lorem, ipsum dolor sit</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="end">
+    <div style="background: var(--secondary-color-2, #17213C);">
+      <div class="container d-flex flex-column flex-start w-auto px-5 py-3">
+        <div class="row ">
+          <div class="col-md-7">
+            <h6>Made With Love By Figmaland All Right Reserved </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body> 
+          
+
+</html>
